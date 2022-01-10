@@ -12,7 +12,7 @@ const chooseOptimalDistance = (function () {
     }
   }
 
-  return function (t, ls, k) {
+  return function (ls, k, t) {
     array = [];
 
     chooseOptimalDistance(ls, k, 0, 0, []);
@@ -29,4 +29,4 @@ const chooseOptimalDistance = (function () {
   
 }());
 
-console.log(chooseOptimalDistance(174, [51, 56, 58, 59, 61], 3));
+console.log(chooseOptimalDistance([51, 56, 58, 59, 61], 3, 174));
